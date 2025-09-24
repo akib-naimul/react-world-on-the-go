@@ -7,7 +7,7 @@ const Country = ({country}) => {
     const [visited, setVisited] = useState(false);
 
     const handleVisited= ()=>{
-        setVisited(true)
+        setVisited(visited ? false : true);
     }
 
     return (
