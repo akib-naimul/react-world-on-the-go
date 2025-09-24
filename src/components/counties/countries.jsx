@@ -8,11 +8,15 @@ const Countries = ({countriesPromise}) => {
     const countries = countriesData.countries
     console.log(countries)
     return (
-        <div className='countries'>
+        <div >
             <h1>Counties List : {countries.length} </h1>
-            {
-                countries.map(country => <Country country={country}></Country>)
-            }
+            <div className='countries'>
+                {
+                  countries.map(country => <Country country={country}></Country>)
+                }
+
+            </div>
+            
         </div>
     );
 };
