@@ -3,6 +3,11 @@ import './Country.css';
 
 const Country = ({country}) => {
     console.log(country)
+
+    const handleVisited= ()=>{
+        
+    }
+
     return (
         <div className='country'>
             <img src={country.flags.flags.png} alt={country.flags.flags.alt} />
@@ -10,6 +15,8 @@ const Country = ({country}) => {
             <p>Region :  {country.region.region} </p>
             <p>Area : {country.area.area} </p>
             <p>Capital: {country.capital.capital} </p>
+
+            <button onClick={handleVisited}>Not Visited</button>
             
         </div>
     );
